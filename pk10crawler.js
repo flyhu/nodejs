@@ -3,9 +3,9 @@ var request = require('request');
 var async = require('async');
 var cheerio = require('cheerio');
 
-var days = 10
-var results = {}
-var datelist=[]
+var days = 10 //抓取最近10天数据
+var results = {}//数据汇总
+var datelist=[]//生成日期
 
 function getdate(days){
 	for(var i=0;i<days;i++){
