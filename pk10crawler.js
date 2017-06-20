@@ -54,7 +54,7 @@ async.eachSeries(datelist, function(day, callback) {
 	     results[day] = result 
 
 //保存文件
-		fs.writeFile('./data/pk10.json', JSON.stringify(results)
+		fs.writeFile('./pk10.json', JSON.stringify(results)
 			,function (err) {
 		        if (err) throw err;
 		        console.log('写入完成');
