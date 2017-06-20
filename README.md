@@ -7,5 +7,7 @@ npm init
 安装所需的模块
 npm request async cheerio  --save
 
-2. 根目录新建一个app.js
+2. 根目录新建一个pk10crawler.js
+
+3.命令行 node pk10crawler.js 完成
 
