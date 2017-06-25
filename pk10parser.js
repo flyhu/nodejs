@@ -1,4 +1,3 @@
-var data=data
 //判断双胆
 function ifdxsd(argument,ball){   
 	var ball=parseInt(ball)
@@ -46,11 +45,12 @@ function fliter(balls,augument,startindex,endindex,position){
 	if(strings.indexOf(reg, pos)>-1){    //开始检索
 		if(pos===0) {   //首次检索修规则
 			fliter_list=[]
-			start=strings.indexOf(augument.slice(1,3), pos)
+			strings.indexOf(augument.slice(1,3), pos)==0?start=strings.indexOf(augument.slice(1,3), pos):start=strings.indexOf(reg, pos)
 		} else {			                    		
 			start=strings.indexOf(reg, pos)
 		}  
-		pos+=1                  	     //索引下移，开始尾部截取定位                         
+		pos=start+1 
+		               	     //索引下移，开始尾部截取定位                         
 		var array=[]	
 
 		if(strings.indexOf(reg, pos)<0){            //末次尾部检索修规则
@@ -74,5 +74,3 @@ function fliter(balls,augument,startindex,endindex,position){
 
 	return fliter_list
 }
-
-dxsd_array(dx).[date][$ball].join().replace(/,/g, "").fliter(balls,$reg,0,0,0)
